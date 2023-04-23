@@ -162,13 +162,22 @@ export const SocialIcons = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 240px;
+  gap: 1rem;
 
 `;
 
 export const SocialIconLink = styled.a`
   color: #fff;
   font-size: 24px;
+
+  &:hover {
+    color: #0467fb;
+    transition: 0.3s ease-out;
+  }
+`;
+export const SocialIconText = styled.div`
+  color: #fff;
+  font-size: 16px;
 
   &:hover {
     color: #0467fb;

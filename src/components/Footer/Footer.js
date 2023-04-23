@@ -5,7 +5,8 @@ import {
   FaInstagram,
   FaYoutube,
   FaTwitter,
-  FaLinkedin
+  FaEnvelope,
+  FaPhone
 } from 'react-icons/fa';
 import {
   FooterContainer,
@@ -25,7 +26,8 @@ import {
   SocialIcon,
   WebsiteRights,
   SocialIcons,
-  SocialIconLink
+  SocialIconLink,
+  SocialIconText
 } from './Footer.elements';
 
 function Footer() {
@@ -34,36 +36,22 @@ function Footer() {
 
   return (
     <FooterContainer>
-      <FooterSubscription>
-        <FooterSubHeading>
-          Join our exclusive membership to receive the latest news and trends
-        </FooterSubHeading>
-        <FooterSubText>You can unsubscribe at any time.</FooterSubText>
-        <Form>
-          <FormInput name='email' type='email' placeholder='Your Email' />
-          <Button fontBig>Subscribe</Button>
-        </Form>
-      </FooterSubscription>
       <SocialMedia>
         <SocialMediaWrap>
           <SocialLogo to='/'>
             FULDOSE
           </SocialLogo>
           <SocialIcons>
-            <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
-              <FaFacebook />
+            <SocialIconLink href='tel:+918950253211' target='_blank' aria-label='Facebook'>
+              <FaPhone/>
+              <SocialIconText>+91 89502 53211</SocialIconText>
+              <SocialIconText>+91 74172 04257</SocialIconText>
             </SocialIconLink>
-            <SocialIconLink href='/' target='_blank' aria-label='Instagram'>
-              <FaInstagram />
-            </SocialIconLink>
-            <SocialIconLink href='/' target='_blank' aria-label='YouTube' >
-              <FaYoutube />
-            </SocialIconLink>
-            <SocialIconLink href='/' target='_blank' aria-label='Twitter'>
-              <FaTwitter />
-            </SocialIconLink>
-            <SocialIconLink href='/' target='_blank' aria-label='LinkedIn'>
-              <FaLinkedin />
+            
+            
+            <SocialIconLink href='mailto:fuldozzer@gmail.com' aria-label='Facebook'>
+              <FaEnvelope/>
+              <SocialIconText>fuldozzer@gmail.com</SocialIconText>
             </SocialIconLink>
           </SocialIcons>
         </SocialMediaWrap>
